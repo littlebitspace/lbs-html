@@ -1,0 +1,61 @@
+:root {
+  --intractable: #f00;
+  --bg: #000;
+  --text: #fff;
+}
+
+html, body {
+  background-color: var(--bg);
+  overflow-x: hidden; /* prevent full-page scroll */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* font-size: calc(100vw / 118.5186524778606); */
+  font-size: 16px;
+  color: var(--text);
+  text-decoration: none;
+  font-family: monospace;
+}
+
+a {
+  color: var(--intractable);
+  cursor: pointer;
+}
+/* a:hover, .hover {
+  color: var(--text);
+  background-color: var(--intractable);
+} */
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 100%;
+}
+
+pre {
+  position: relative;
+  left: 0;
+  padding: 0 calc((100vw - 80ch) / 2);
+  overflow-x: auto; /* Overflow by default */
+  -ms-overflow-style: none; /* IE, Edge */
+  scrollbar-width: none; /* Firefox */
+}
+pre::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.wrap { 
+  white-space: pre-wrap; /* This allows long lines to wrap */
+  word-break: break-word; /* Optional: break long words if needed */
+}
+
+
+
+none { /* DEBUG */
+  background-color: rgba(255, 0, 0, 0.2);
+}
